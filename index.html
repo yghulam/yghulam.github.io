@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/GamingLogo.png" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- emailing api -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      defer
+    ></script>
+
+    <!-- javascript -->
+    <script src="./app.js" defer></script>
+
+    <title>Ghulam Yasin</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="nav-center">
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a class="active-link">Home</a></li>
+          <li><a>Skills</a></li>
+          <li><a>Projects</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+
+        <!-- hamburger menu -->
+        <button class="hamburger">
+          <div id="nav-icon2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero-center">
+          <!-- hero text -->
+          <div class="hero-text">
+            <h1>Hello</h1>
+            <h2>I’m Yacine Kahlerras</h2>
+            <p>a passionate Front End Web developper</p>
+          </div>
+
+          <!-- hero image -->
+          <div class="hero-image">
+            <img
+              src="./images/illustrations/astronaut-1.svg"
+              alt="character illustration"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="skills">
+        <div class="skills-center">
+          <!-- title -->
+          <h3>Skills</h3>
+
+          <!-- tools -->
+          <ul class="tools-list" id="tools-list">
+            <!-- react -->
+            <li>
+              <img src="./images/skills/react-icon.svg" alt="figma icon" />
+            </li>
+
+            <!-- next js -->
+            <li>
+              <img src="./images/skills/nexJs.webp" alt="html icon" />
+            </li>
+
+            <!-- firebase -->
+            <li>
+              <img src="./images/skills/firebase.svg" alt="html icon" />
+            </li>
+
+            <!-- tailwind -->
+            <li>
+              <img src="./images/skills/tailwind.svg" alt="tailwind icon" />
+            </li>
+
+            <!-- sass -->
+            <li>
+              <img src="./images/skills/sass-icon.svg" alt="figma icon" />
+            </li>
+
+            <!-- figma -->
+            <li>
+              <img src="./images/skills/figma.svg" alt="figma icon" />
+            </li>
+
+            <!-- express -->
+            <li>
+              <img src="./images/skills/expressjs.svg" alt="express icon" />
+            </li>
+
+            <!-- mongo -->
+            <li>
+              <img src="./images/skills/mongo.svg" alt="mongodb icon" />
+            </li>
+
+            <!-- node -->
+            <li>
+              <img src="./images/skills/node.svg" alt="nodejs icon" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section class="projects">
+        <div class="projects-center">
+          <!-- title -->
+          <h3>Projects</h3>
+
+          <!-- projects list -->
+          <ul class="projects-list"></ul>
+
+          <!-- loading animation -->
+          <div class="loading-projects"></div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about">
+        <div class="about-center">
+          <!-- title -->
+          <h3>About</h3>
+
+          <p>
+            My name is Ghulam Yasin and I have been passionate about
+            programming since my early teens, and I have been working hard to
+            hone my skills ever since.
+          </p>
+          <p>
+            I have extensive experience working with HTML, CSS and JavaScript,
+            as well as modern frameworks such as Next.js, Express.js, Mongodb,
+            Firebase and Tailwind. I am well-versed in web performance
+            optimization, cross-browser compatibility, and responsive design. I
+            have a strong background in web design principles and best
+            practices, and I strive to make sure my work meets the highest
+            standards of quality.
+          </p>
+          <p>
+            I have always been interested in the ever-evolving web development
+            landscape and I enjoy keeping up with the latest trends and
+            technologies. I am a passionate problem solver and I'm always
+            looking for ways to improve my development workflow and make the
+            most out of my skillset.
+          </p>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact">
+        <div class="contact-center">
+          <!-- title -->
+          <h3>Contact</h3>
+
+          <!-- contact form -->
+          <form class="form" novalidate>
+            <div class="name-field">
+              <input name="name" type="text" placeholder="Your Name*" />
+              <small class="name-error-msg"></small>
+            </div>
+
+            <div class="email-field">
+              <input name="email" type="email" placeholder="Your Email*" />
+              <small class="email-error-msg"></small>
+            </div>
+
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="6"
+              placeholder="Message* (optional)"
+            ></textarea>
+            <button type="submit">Contact</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- sidemenu -->
+    <aside class="sidemenu">
+      <div class="sidemenu-center">
+        <ul class="sidemenu-links">
+          <li>Home</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- project modal -->
+    <aside class="project-modal">
+      <!-- main modal -->
+      <div class="modal-center">
+        <!-- close btn -->
+        <div class="close-btn-container">
+          <button class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15">
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- project image -->
+        <div class="project-modal-img-container">
+          <img
+            class="project-modal-img"
+            src="./images/projects/project-4.png"
+            alt="project screenshot"
+          />
+        </div>
+
+        <!-- button container -->
+        <div class="modal-btn-container">
+          <!-- source btn -->
+          <a
+            class="source-btn"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#647BFF"
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+
+          <!-- live btn -->
+          <a
+            class="live-btn"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-box-arrow-up-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- project title -->
+        <h3 class="modal-project-title">Immersive Experience</h3>
+
+        <!-- info -->
+        <p class="project-text">
+          Suspendisse viverra, nunc sed convallis cursus, mi erat scelerisque
+          dui, id pretium orci mi porttitor ipsum. Maecenas in auctor ligula,
+          sit amet vulputate sapien. Morbi congue dignissim consequat. Nunc at
+          maximus nunc. <br />
+
+          Nullam vehicula quis tellus nec tempor. Aliquam pretium, quam quis
+          porttitor vulputate, orci nulla viverra massa, nec condimentum ante
+          nulla sed ligula. Duis semper cursus semper. Vivamus dictum maximus
+          turpis non accumsan.
+        </p>
+      </div>
+    </aside>
+
+    <!-- notification -->
+    <div class="note">Thanks for contacting i'll respond soon !</div>
+  </body>
+</html>
